@@ -1,0 +1,122 @@
+/* 全体設定 */
+body {
+  padding: 20px 10px;
+  font-family: sans-serif;
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+
+h1, h2 {
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* フォームボックス */
+.form-box {
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* フォームグループ */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.required {
+  background: #e53935;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.optional {
+  background: #999;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* ボタン */
+button[type="submit"],
+.next-btn,
+.cancel-btn,
+.cancel-btn_confirm {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.next-btn { background-color: #0078d7; color: #fff; }
+.cancel-btn,
+.cancel-btn_confirm { background-color: #ddd; color: #333; }
+
+.next-btn:hover { background-color: #005fa3; }
+.cancel-btn:hover,
+.cancel-btn_confirm:hover { background-color: #bbb; }
+
+/* フッター */
+.form-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.form-footer button { flex: 1; padding: 14px 0; font-size: 16px; border-radius: 8px; }
+
+/* レスポンシブ */
+@media (max-width: 480px) {
+  .form-footer { flex-direction: column; gap: 10px; }
+  .form-group input,
+  .form-group select,
+  button { font-size: 14px; padding: 10px; }
+}
+
+.confirm-item {
+  margin-bottom: 12px;
+}
+
+.confirm-item strong {
+  display: block; /* ラベルを上に表示 */
+  margin-bottom: 4px;
+}
+
+.confirm-item span {
+  display: block; /* 値を改行表示 */
+  padding-left: 4px; /* 少し余白 */
+}

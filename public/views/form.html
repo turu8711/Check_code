@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>チケットフォーム</title>
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+  <!--<h1>チケット発行フォーム</h1>
+
+  <form method="POST" action="../form/generate">
+    <label>チケットID: <input type="number" name="ticketId" required></label>
+    <button type="submit">送信</button>
+  </form>-->
+
+  <h1>チケット内容</h1>
+  <div class="form-box">
+    <form method="POST" action="/form/confirm">
+      <div class="form-group">
+        <label>生徒の学籍番号 <span class="required">必須</span></label>
+        <input type="number" name="number" placeholder="生徒の学籍番号を入力" required><!--min="0" max="120"で最大・最小設定可能-->
+      </div>
+
+      <div class="form-group">
+        <label>生徒との続柄 <span class="required">必須</span></label>
+        <select name="Relationship" required>
+          <option value="">選択してください</option>
+          <option value="0">父</option>
+          <option value="1">母</option>
+          <option value="2">兄</option>
+          <option value="3">姉</option>
+          <option value="4">弟</option>
+          <option value="5">妹</option>
+          <option value="6">祖父</option>
+          <option value="7">祖母</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>メールアドレス <span class="required">必須</span></label>
+        <input type="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-footer">
+        <button type="submit" class="next-btn">次へ</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
+<!--
+<div class="form-group">
+  <label>生徒との続柄 <span class="optional">任意</span></label>
+  <input type="text" id="name-sub" placeholder="山田 太郎">
+</div>-->
